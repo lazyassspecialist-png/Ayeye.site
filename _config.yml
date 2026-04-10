@@ -1,10 +1,10 @@
 title: ayeye
 email: hello@ayeye.site
 description: "AI tools that actually help you build side income — reviewed, tested, recommended."
-baseurl: ""
-url: "https://ayeye.site"
+baseurl: "/Ayeye.site"
+url: "https://lazyassspecialist-png.github.io"
 github_username: lazyassspecialist-png
-repository: lazyassspecialist-png/ayeye.site
+repository: lazyassspecialist-png/Ayeye.site
 
 # No theme: we use custom layouts in _layouts/
 plugins:
