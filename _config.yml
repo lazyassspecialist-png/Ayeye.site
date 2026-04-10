@@ -1,0 +1,30 @@
+title: ayeye
+email: hello@ayeye.site
+description: "AI tools that actually help you build side income — reviewed, tested, recommended."
+baseurl: ""
+url: "https://ayeye.site"
+github_username: lazyassspecialist-png
+repository: lazyassspecialist-png/ayeye.site
+
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+header_pages:
+  - about.md
+  - reviews.md
+  - guides.md
+  - comparisons.md
+
+collections:
+  posts:
+    output: true
+
+permalink: /:title/
+
+# Affiliate disclosure
+affiliate_disclosure: "This site contains affiliate links. We may earn a commission at no extra cost to you when you make a purchase through links on this site. We only recommend tools we've personally tested."
+
+# Google Analytics (add later)
+# google_analytics: UA-XXXXXXXXX-X
