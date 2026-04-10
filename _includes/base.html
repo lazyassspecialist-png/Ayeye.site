@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  {% if site.github_username %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% endif %}
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">ayeye</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/reviews/">Reviews</a></li>
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/comparisons/">Comparisons</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="site-main">
+  {{ content }}
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">ayeye</span>
+      <p>AI tools that actually build side income. Tested. Reviewed. Recommended.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/about/">About</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/guides/">Guides</a>
+      <a href="/privacy/">Privacy</a>
+    </div>
+    <p class="footer-disclosure">Affiliate disclosure: We earn commissions when you purchase through links on this site — at no extra cost to you.</p>
+    <p class="footer-copy">&copy; {{ site.time | date: "%Y" }} ayeye. Built with <a href="https://jekyllrb.com">Jekyll</a>.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+    this.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
