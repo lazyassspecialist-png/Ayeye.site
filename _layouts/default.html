@@ -1,1 +1,63 @@
-{{ content }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}ayeye</title>
+  <meta name="description" content="{{ page.excerpt | default: 'AI tools that actually build side income. Tested reviews, real workflows.' }}">
+  <meta name="author" content="ayeye">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650;700;750&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◉</text></svg>">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">ayeye</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/reviews/">Reviews</a></li>
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/comparisons/">Comparisons</a></li>
+      <li><a href="/about/" class="nav-cta">Start →</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page content -->
+<main class="site-main">
+  {{ content }}
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">ayeye</span>
+      <span class="footer-tagline">AI tools that build side income</span>
+    </div>
+    <div class="footer-links">
+      <a href="/about/">About</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/guides/">Guides</a>
+      <a href="/privacy/">Privacy</a>
+    </div>
+    <p class="footer-copy">Affiliate disclosure: We earn commissions through affiliate links on this site — at no extra cost to you.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+    this.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

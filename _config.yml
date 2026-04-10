@@ -6,7 +6,7 @@ url: "https://ayeye.site"
 github_username: lazyassspecialist-png
 repository: lazyassspecialist-png/ayeye.site
 
-theme: minima
+# No theme: we use custom layouts in _layouts/
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
